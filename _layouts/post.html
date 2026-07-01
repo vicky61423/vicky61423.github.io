@@ -19,7 +19,7 @@ layout: default
             {% endif %}
             <span class="meta" style="display: inline-flex; align-items: center; vertical-align: middle; flex-wrap: wrap;">
               Posted by&nbsp;<a href="#">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a>
-              <img src="{{ '/img/postBy.png' | prepend: site.baseurl }}" alt="Author" style="width: 30px; height: 30px; border-radius: 50%; margin-left: 6px; margin-right: 6px; object-fit: cover; border: 1px solid rgba(255, 255, 255, 0.6); box-shadow: 0 1px 3px rgba(0,0,0,0.15);">
+              <img src="{{ '/img/personal/postBy.png' | prepend: site.baseurl }}" alt="Author" style="width: 30px; height: 30px; border-radius: 50%; margin-left: 6px; margin-right: 6px; object-fit: cover; border: 1px solid rgba(255, 255, 255, 0.6); box-shadow: 0 1px 3px rgba(0,0,0,0.15);">
               on {{ page.date | date: '%B %d, %Y' }}&nbsp;&middot;&nbsp;{% include read_time.html content=page.content %}
             </span>
           </div>

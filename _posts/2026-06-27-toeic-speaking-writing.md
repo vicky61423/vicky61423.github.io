@@ -3,7 +3,7 @@ layout: post
 title: "多益說寫資源分享與準備方法"
 subtitle: "Backend Engineer 的英文口說與寫作躍進心得"
 date: 2026-06-27 12:00:00 +0800
-background: '/img/Gemini_Generated_Image_.png'
+background: '/img/background/bg-home-banner.png'
 ---
 >滿分為 200 的說寫考試拿到 TOEIC Writing test 190,  Speaking test 150
 

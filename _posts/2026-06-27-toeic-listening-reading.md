@@ -3,7 +3,7 @@ layout: post
 title: "多益聽讀資源分享與準備方法"
 subtitle: "Backend Engineer 的英文聽力與閱讀高效準備戰略"
 date: 2026-06-27 11:00:00 +0800
-background: '/img/Gemini_Generated_Image_.png'
+background: '/img/background/bg-home-banner.png'
 ---
 
 >TOEIC  Listening and Reading Test : 870 (金色證書)

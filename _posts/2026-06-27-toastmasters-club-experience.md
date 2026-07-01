@@ -3,7 +3,7 @@ layout: post
 title: "Toastmasters club 國際英文演講社心得"
 subtitle: "克服台上恐懼與精進公眾演說能力的實戰歷程"
 date: 2026-06-27 10:00:00 +0800
-background: '/img/Gemini_Generated_Image_.png'
+background: '/img/background/bg-home-banner.png'
 ---
 
 對於許多後端工程師來說，面對電腦螢幕敲擊鍵盤是件輕鬆自在的事，但要站在眾人面前進行全英文的公眾演說，往往是一大挑戰。加入 Toastmasters 國際英文演講社是我跨出舒適圈、克服台上恐懼的關鍵一步。
