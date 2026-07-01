@@ -5,6 +5,7 @@
 #   icon: FontAwesome 圖示類別 (例如 "fas fa-code"、"fas fa-robot")
 #   color: 按鈕與圖示的主色調 (HEX 或 RGB 顏色)
 #   icon_bg_color: 圖示背景圓圈顏色 (建議使用 rgba 以便設定透明度，例如 "rgba(29, 125, 240, 0.1)")
+#   image: 作品截圖或代表圖路徑 (選填，如 "/img/portfolio_leetcode.jpg"；若不填則不會顯示圖片)
 #   description: 作品內容描述
 #   link: 專案連結或 GitHub 連結
 #   link_text: 按鈕文字 (若未填寫，預設為 "前往 GitHub Repo")
@@ -13,6 +14,7 @@
   icon: "fas fa-code"
   color: "#71a8dc"
   icon_bg_color: "rgba(29, 125, 240, 0.1)"
+  image: "/img/portfolio_leetcode.jpg"
   description: "系統性記錄與整理演算法（Algorithms）和資料結構（Data Structures）的刷題筆記與核心解題思路。主要使用 Java 進行高效實作，內容涵蓋 LeetCode 熱門題單、不同難度與來源的經典面試題，並針對雙指標、動態規劃、圖形演算法等經典演算法模式（Patterns）進行練習總結，旨在建立完整的技術解題邏輯。"
   link: "https://github.com/vicky61423/LeetCode"
   link_text: "前往 GitHub Repo"
@@ -21,6 +23,25 @@
   icon: "fas fa-robot"
   color: "#2ecc71"
   icon_bg_color: "rgba(46, 204, 113, 0.1)"
+  image: "/img/portfolio_healthbot.jpg"
   description: "結合 Line Bot 與 RAG (檢索增強生成) 技術的智慧型醫療知識問答系統。整合向量資料庫與大型語言模型（LLM），提供一般大眾即時、精確且具文獻支持的健康衛教資訊。本專案全面部署於 Azure 雲端平台，並整合輕量且高效的 Azure Functions 維護與同步向量資料庫，藉此實踐雲端微服務架構與自動化資料管線（Data Pipeline）的系統建立經驗。"
-  link: "https://github.com/vicky61423/HealthBuddy"
+  link: "https://github.com/vicky61423/HealthPromotHelper"
+  link_text: "前往 GitHub Repo"
+
+- title: "雲端自動化 CI/CD Pipeline"
+  icon: "fas fa-cloud-upload-alt"
+  color: "#9b59b6"
+  icon_bg_color: "rgba(155, 89, 182, 0.1)"
+  image: "/img/portfolio_cicd.jpg"
+  description: "設計並實作基於 GitHub Actions 與 Docker 的自動化建置與部署流程。整合 SonarQube 進行靜態程式碼分析與漏洞掃描，並透過 Terraform 進行 Infrastructure as Code (IaC) 的雲端資源管理。實現每次 Commit 自動觸發單元測試與容器化部署，大幅縮短軟體交付週期並提升部署穩定性。"
+  link: "https://github.com/vicky61423/devops-pipeline"
+  link_text: "前往 GitHub Repo"
+
+- title: "高效能 RESTful API 服務"
+  icon: "fas fa-server"
+  color: "#e67e22"
+  icon_bg_color: "rgba(230, 126, 34, 0.1)"
+  image: "/img/portfolio_server.jpg"
+  description: "使用 Spring Boot 開發的高效能後端 API 服務，主要處理高併發的訂單系統。導入 Redis 快取機制減少資料庫負載，並整合 RabbitMQ 進行異步任務處理。系統透過 JMeter 壓力測試驗證，可在單一節點下承受每秒數千次請求，同時確保資料庫交易的 ACID 特性與系統高可用性。"
+  link: "https://github.com/vicky61423/high-perf-api"
   link_text: "前往 GitHub Repo"
