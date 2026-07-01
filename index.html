@@ -1,0 +1,69 @@
+---
+layout: home
+background: '/img/Gemini_Generated_Image_.png'
+---
+
+<div class="profile-section text-center my-5 animate-fade-in">
+  <div class="profile-avatar-container mb-4">
+    <img src="{{ '/img/profile.png' | prepend: site.baseurl }}" alt="Profile Photo" class="img-fluid rounded-circle shadow-sm" style="width: 280px; height: 280px; object-fit: cover; border: 4px solid #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+  </div>
+  <h2 class="profile-title font-weight-bold" style="color: #2c3e50; font-family: 'Open Sans', sans-serif;">Vicky Tsai</h2>
+  <div class="profile-bio px-3 mx-auto mt-3" style="max-width: 650px;">
+    <p class="text-muted" style="font-size: 1.1rem; line-height: 1.8; letter-spacing: 0.5px;">
+      您好！我是一名專注於後端開發的軟體工程師。擅長高效能、高可用性的微服務系統與 API 設計。熱衷於運用雲端架構與自動化流程解決企業問題，並樂於在部落格中分享關於技術、英文學習及公眾演說的心得。
+    </p>
+  </div>
+  <div class="profile-social mt-4">
+    <a href="https://github.com/{{ site.github_username }}" target="_blank" class="mx-3 text-decoration-none" title="GitHub">
+      <span class="fa-stack fa-lg social-icon-btn">
+        <i class="fas fa-circle fa-stack-2x profile-social-circle"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+    <a href="mailto:{{ site.email }}" class="mx-3 text-decoration-none" title="Email">
+      <span class="fa-stack fa-lg social-icon-btn">
+        <i class="fas fa-circle fa-stack-2x profile-social-circle"></i>
+        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </div>
+</div>
+
+<hr class="my-5" style="border-top: 1px solid rgba(0,0,0,0.08);">
+
+<div class="portfolio-section my-5">
+  <h3 class="section-title text-center mb-5" style="font-family: 'Open Sans', sans-serif;"><i class="fas fa-briefcase mr-2" style="color: #34495e;"></i> 精選作品集 (Portfolio)</h3>
+  <div class="row">
+    {% for project in site.data.portfolio %}
+    <div class="col-md-6 mb-4">
+      <div class="card h-100 border-0 shadow-sm transition-hover">
+        <div class="card-body p-4 d-flex flex-column">
+          <div class="project-icon mb-3">
+            <span class="fa-stack fa-lg" style="color: {{ project.color | default: '#71a8dc' }};">
+              <i class="fas fa-circle fa-stack-2x" style="color: {{ project.icon_bg_color | default: 'rgba(29, 125, 240, 0.1)' }};"></i>
+              <i class="{{ project.icon | default: 'fas fa-code' }} fa-stack-1x"></i>
+            </span>
+          </div>
+          <h4 class="card-title font-weight-bold" style="color: #2c3e50; font-size: 1.25rem;">{{ project.title }}</h4>
+          <p class="card-text text-muted flex-grow-1" style="font-size: 0.95rem; line-height: 1.6;">
+            {{ project.description }}
+          </p>
+          {% if project.link %}
+          <div class="mt-4">
+            <a href="{{ project.link }}" class="btn btn-sm text-white px-3 font-weight-bold" style="background-color: {{ project.color | default: '#71a8dc' }}; border-radius: 20px;" target="_blank">
+              <i class="{{ project.link_icon | default: 'fab fa-github' }} mr-1"></i> {{ project.link_text | default: '前往 GitHub Repo' }}
+            </a>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<hr class="my-5" style="border-top: 1px solid rgba(0,0,0,0.08);">
+
+<div class="posts-section-header mb-4">
+  <h3 class="section-title text-center" style="font-family: 'Open Sans', sans-serif;"><i class="fas fa-pencil-alt mr-2" style="color: #34495e;"></i> 最新文章 (Latest Posts)</h3>
+</div>

@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<!-- Page Header -->
+{% if page.background %}
+<header class="masthead masthead-post" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+  {% else %}
+  <header class="masthead masthead-post">
+    {% endif %}
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>{{ page.title }}</h1>
+            {% if page.subtitle %}
+            <h2 class="subheading">{{ page.subtitle }}</h2>
+            {% endif %}
+            <span class="meta" style="display: inline-flex; align-items: center; vertical-align: middle; flex-wrap: wrap;">
+              Posted by&nbsp;<a href="#">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a>
+              <img src="{{ '/img/postBy.png' | prepend: site.baseurl }}" alt="Author" style="width: 30px; height: 30px; border-radius: 50%; margin-left: 6px; margin-right: 6px; object-fit: cover; border: 1px solid rgba(255, 255, 255, 0.6); box-shadow: 0 1px 3px rgba(0,0,0,0.15);">
+              on {{ page.date | date: '%B %d, %Y' }}&nbsp;&middot;&nbsp;{% include read_time.html content=page.content %}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <div class="post-content">
+          {{ content }}
+        </div>
+
+        <hr>
+
+        <div class="clearfix text-center">
+          <a class="btn btn-primary" href="{{ '/posts' | relative_url }}">&larr; Back to Posts</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
