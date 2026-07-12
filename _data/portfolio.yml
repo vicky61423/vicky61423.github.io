@@ -10,15 +10,6 @@
 #   link: 專案連結或 GitHub 連結
 #   link_text: 按鈕文字 (若未填寫，預設為 "前往 GitHub Repo")
 
-- title: "LeetCode 刷題筆記"
-  icon: "fas fa-code"
-  color: "#71a8dc"
-  icon_bg_color: "rgba(29, 125, 240, 0.1)"
-  image: "/img/profolio/portfolio_leetcode.jpg"
-  description: "系統性記錄與整理演算法（Algorithms）和資料結構（Data Structures）的刷題筆記與核心解題思路。主要使用 Java 進行高效實作，內容涵蓋 LeetCode 熱門題單、不同難度與來源的經典面試題，並針對雙指標、動態規劃、圖形演算法等經典演算法模式（Patterns）進行練習總結，旨在建立完整的技術解題邏輯。"
-  link: "https://github.com/vicky61423/LeetCode"
-  link_text: "前往 GitHub Repo"
-
 - title: "衛教小幫手 (Line Bot & RAG)"
   icon: "fas fa-robot"
   color: "#2ecc71"
@@ -27,6 +18,15 @@
   description: "結合 Line Bot 與 RAG (檢索增強生成) 技術的智慧型醫療知識問答系統。整合向量資料庫與大型語言模型（LLM），提供一般大眾即時、精確且具文獻支持的健康衛教資訊。本專案全面部署於 Azure 雲端平台，並整合輕量且高效的 Azure Functions 維護與同步向量資料庫，藉此實踐雲端微服務架構與自動化資料管線（Data Pipeline）的系統建立經驗。"
   link: "https://github.com/vicky61423/HealthPromotHelper"
   link_text: "前往 GitHub Repo"
+
+# - title: "Algorithms & DS Notes"
+#   icon: "fas fa-code"
+#   color: "#71a8dc"
+#   icon_bg_color: "rgba(29, 125, 240, 0.1)"
+#   image: "/img/profolio/portfolio_leetcode.jpg"
+#   description: "系統性記錄與整理演算法（Algorithms）和資料結構（Data Structures）的筆記。主要使用 Java 進行實作，內容涵蓋 LeetCode 熱門題單、不同難度與來源的經典題，並針對雙指標、動態規劃、圖形演算法等經典演算法模式（Patterns）進行練習總結，旨在建立完整的技術解題邏輯。"
+#   link: "https://github.com/vicky61423/Data-Structures-and-Algorithms"
+#   link_text: "前往 GitHub Repo"
 
 - title: "牙醫診所預約管理系統"
   icon: "fas fa-tooth"
