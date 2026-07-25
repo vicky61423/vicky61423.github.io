@@ -10,7 +10,7 @@
 #   link: 專案連結或 GitHub 連結
 #   link_text: 按鈕文字 (若未填寫，預設為 "前往 GitHub Repo")
 
-- title: "衛教小幫手 (Line Bot & RAG)"
+- title: "衛教小幫手 (Line Bot & RAG)(2026)"
   icon: "fas fa-robot"
   color: "#2ecc71"
   icon_bg_color: "rgba(46, 204, 113, 0.1)"
@@ -28,7 +28,7 @@
   link: "https://github.com/vicky61423/Data-Structures-and-Algorithms"
   link_text: "前往 GitHub Repo"
 
-- title: "牙醫診所預約管理系統"
+- title: "牙醫診所預約管理系統(2022)"
   icon: "fas fa-tooth"
   color: "#1abc9c"
   icon_bg_color: "rgba(26, 188, 156, 0.1)"
