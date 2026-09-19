@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Toastmasters club 國際英文演講社心得"
-subtitle: "克服台上恐懼與精進公眾演說能力的實戰歷程"
+title: "Toastmasters 英文演講社"
+subtitle: ""
 date: 2026-06-27 10:00:00 +0800
 background: "/img/background/bg-home-banner.jpg"
 ---

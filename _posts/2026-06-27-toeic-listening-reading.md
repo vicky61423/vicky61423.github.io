@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "多益聽讀資源分享與準備方法"
-subtitle: "Backend Engineer 的英文聽力與閱讀高效準備戰略"
+subtitle: ""
 date: 2026-06-27 11:00:00 +0800
 background: "/img/background/bg-home-banner.jpg"
 ---

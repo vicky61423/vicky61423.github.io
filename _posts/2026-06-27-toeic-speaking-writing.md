@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "多益說寫資源分享與準備方法"
-subtitle: "Backend Engineer 的英文口說與寫作躍進心得"
+subtitle: ""
 date: 2026-06-27 12:00:00 +0800
 background: "/img/background/bg-home-banner.jpg"
 ---

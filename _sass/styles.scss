@@ -3,9 +3,9 @@
 
 // Custom Overrides & UI Improvements
 
-// 1. Menu Bar / Masthead height reduction to 1/2 (with safe top padding for fixed navbar)
+// 1. Menu Bar / Masthead height reduction to 70% (with safe top padding for fixed navbar)
 header.masthead {
-  margin-bottom: 25px;
+  margin-bottom: 12px; // 原本 25px 縮小為 50%
 
   .overlay {
     background-color: #101c2b !important;
@@ -13,12 +13,12 @@ header.masthead {
   }
 
   &.masthead-fixed {
-    height: 220px;
+    height: 154px; // 原本 220px 的 70%
     display: flex;
     align-items: center;
 
     @media only screen and (min-width: 768px) {
-      height: 280px;
+      height: 196px; // 原本 280px 的 70%
     }
 
     .container {
@@ -28,10 +28,22 @@ header.masthead {
     .page-heading,
     .site-heading {
       padding: 0 !important;
-      margin-top: 50px;
+      margin-top: 35px; // 原本 50px 的 70%
 
       @media only screen and (min-width: 768px) {
-        margin-top: 60px;
+        margin-top: 42px; // 原本 60px 的 70%
+      }
+
+      h1 {
+        font-size: 40px !important; // 原本 50px 的 80%
+
+        @media only screen and (min-width: 768px) {
+          font-size: 64px !important; // 原本 80px 的 80%
+        }
+      }
+
+      .subheading {
+        font-size: 19px !important; // 原本 24px 的 80%
       }
     }
   }
@@ -41,13 +53,38 @@ header.masthead {
     display: block;
 
     .post-heading {
-      padding: 85px 0 35px !important;
+      padding: 60px 0 25px !important; // 原本 85px 0 35px 的 70%
 
       @media only screen and (min-width: 768px) {
-        padding: 110px 0 45px !important;
+        padding: 77px 0 32px !important; // 原本 110px 0 45px 的 70%
+      }
+
+      h1 {
+        font-size: 28px !important; // 原本 35px 的 80%
+
+        @media only screen and (min-width: 768px) {
+          font-size: 44px !important; // 原本 55px 的 80%
+        }
+      }
+
+      .subheading {
+        font-size: 19px !important; // 原本 24px 的 80%
+
+        @media only screen and (min-width: 768px) {
+          font-size: 24px !important; // 原本 30px 的 80%
+        }
+      }
+
+      .meta {
+        font-size: 16px !important; // 原本 20px 的 80%
       }
     }
   }
+}
+
+// 1c. Profile Section Spacing
+.profile-section {
+  margin-top: 1.5rem !important; // 原本 3rem (my-5) 縮小為 50%
 }
 
 // 1b. Footer social icons styling (size & colors)
@@ -213,10 +250,29 @@ footer .list-inline-item {
   }
 }
 
-// 5. Section Title styling
+// 5. Section Title styling & Smooth Scroll
+html {
+  scroll-behavior: smooth;
+}
+
+#portfolio,
+#posts {
+  scroll-margin-top: 70px;
+}
+
 .section-title {
+  font-size: 1.4rem !important; // 原本 h3 (1.75rem) 的 80%
   font-weight: 800;
   letter-spacing: 1px;
+}
+
+// 5b. Profile & Card Titles (80%)
+.profile-title {
+  font-size: 1.6rem !important; // 原本 h2 (2rem) 的 80%
+}
+
+.card-title {
+  font-size: 1rem !important; // 原本 1.25rem 的 80%
 }
 
 // 6. Font Family Overrides (Option A: Inter & Noto Sans TC)
@@ -252,8 +308,15 @@ pre, code, kbd, samp, var, pre code {
   }
 }
 
-// 9. Post Content Links Style (Make markdown hyperlinks blue and clear)
+// 9. Post Content Links Style & Headings (Headings scaled to 80%)
 .post-content {
+  h1 { font-size: 2rem !important; }    // 原本 2.5rem 的 80%
+  h2 { font-size: 1.6rem !important; }  // 原本 2rem 的 80%
+  h3 { font-size: 1.4rem !important; }  // 原本 1.75rem 的 80%
+  h4 { font-size: 1.2rem !important; }  // 原本 1.5rem 的 80%
+  h5 { font-size: 1rem !important; }    // 原本 1.25rem 的 80%
+  h6 { font-size: 0.8rem !important; }  // 原本 1rem 的 80%
+
   a {
     color: #1d7df0 !important;
     text-decoration: underline !important;
@@ -267,12 +330,29 @@ pre, code, kbd, samp, var, pre code {
   }
 }
 
-// 10. 自訂文章列表 Hover 顏色
+// 10. 自訂文章列表 Hover 顏色與標題尺寸 (縮小為 80%)
 .post-preview {
+  >a {
+    >.post-title {
+      font-size: 24px !important; // 原本 30px 的 80%
 
-  >a:hover,
-  >a:focus {
-    color: #5782aa !important; // 👈 將這裡的色碼改成您想要的 Hover 顏色（例如亮藍色 #71a8dc）
+      @media only screen and (min-width: 768px) {
+        font-size: 29px !important; // 原本 36px 的 80%
+      }
+    }
+
+    >.post-subtitle {
+      font-size: 1.4rem !important; // 原本 h3 (1.75rem) 的 80%
+    }
+
+    &:hover,
+    &:focus {
+      color: #5782aa !important; // 👈 將這裡的色碼改成您想要的 Hover 顏色（例如亮藍色 #71a8dc）
+    }
+  }
+
+  >.post-meta {
+    font-size: 14.5px !important; // 原本 18px 的 80%
   }
 }
 

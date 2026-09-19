@@ -3,9 +3,9 @@ layout: home
 background: '/img/background/bg-home-banner.jpg'
 ---
 
-<div class="profile-section text-center my-5 animate-fade-in">
+<div class="profile-section text-center mt-4 mb-5 animate-fade-in">
   <div class="profile-avatar-container mb-4">
-    <img src="{{ '/img/personal/profile.jpg' | prepend: site.baseurl }}" alt="Profile Photo" class="img-fluid rounded-circle shadow-sm" style="width: 250px; height: 250px; object-fit: cover; border: 4px solid #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+    <img src="{{ '/img/personal/profile.jpg' | prepend: site.baseurl }}" alt="Profile Photo" class="img-fluid rounded-circle shadow-sm" style="width: 175px; height: 175px; object-fit: cover; border: 4px solid #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
   </div>
   <h2 class="profile-title font-weight-bold" style="color: #2c3e50; font-family: 'Open Sans', sans-serif;">Vicky Tsai</h2>
   <div class="profile-bio px-3 mx-auto mt-3" style="max-width: 850px;">
@@ -35,7 +35,7 @@ background: '/img/background/bg-home-banner.jpg'
 
 <hr class="my-5" style="border-top: 1px solid rgba(0,0,0,0.08);">
 
-<div class="portfolio-section my-5">
+<div class="portfolio-section my-5" id="portfolio">
   <h3 class="section-title text-center mb-5" style="font-family: 'Open Sans', sans-serif;"><i class="fas fa-briefcase mr-2" style="color: #34495e;"></i> 精選作品集 (Portfolio)</h3>
   
   <div class="portfolio-slider-wrapper">
@@ -71,7 +71,7 @@ background: '/img/background/bg-home-banner.jpg'
               </span>
             </div>
           {% endif %}
-            <h4 class="card-title font-weight-bold" style="color: #2c3e50; font-size: 1.25rem;">{{ project.title }}</h4>
+            <h4 class="card-title font-weight-bold" style="color: #2c3e50; font-size: 1rem;">{{ project.title }}</h4>
             <p class="card-text text-muted flex-grow-1" style="font-size: 0.95rem; line-height: 1.6;">
               {{ project.description }}
             </p>
@@ -97,6 +97,6 @@ background: '/img/background/bg-home-banner.jpg'
 
 <hr class="my-5" style="border-top: 1px solid rgba(0,0,0,0.08);">
 
-<div class="posts-section-header mb-4">
+<div class="posts-section-header mb-4" id="posts">
   <h3 class="section-title text-center" style="font-family: 'Open Sans', sans-serif;"><i class="fas fa-pencil-alt mr-2" style="color: #34495e;"></i> 最新文章 (Latest Posts)</h3>
 </div>
